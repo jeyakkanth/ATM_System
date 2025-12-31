@@ -2,10 +2,11 @@ package atmSystem.example.ATM_System.entity;
 
 
 import atmSystem.example.ATM_System.Enum.TransactionType;
+import atmSystem.example.ATM_System.utils.DateAudit;
 import jakarta.persistence.*;
 
 @Entity
-public class Transaction {
+public class Transaction extends DateAudit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
