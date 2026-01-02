@@ -1,9 +1,12 @@
 package atmSystem.example.ATM_System.entity;
 
+import atmSystem.example.ATM_System.utils.DateAudit;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
-public class User {
+@Data
+public class User extends DateAudit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
