@@ -4,8 +4,10 @@ package atmSystem.example.ATM_System.entity;
 import atmSystem.example.ATM_System.Enum.TransactionType;
 import atmSystem.example.ATM_System.utils.DateAudit;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 public class Transaction extends DateAudit {
 
     @Id
